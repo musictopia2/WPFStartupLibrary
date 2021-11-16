@@ -3,8 +3,8 @@ public static class Extensions
 {
     public static void RegisterWPFServices(this IServiceCollection services)
     {
-
         services.AddSingleton<CustomWindowsClasses>();
+        services.AddSingleton<ILayout>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<IExit>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<IMessageBox>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<ISystemError>(xx => xx.GetRequiredService<CustomWindowsClasses>());

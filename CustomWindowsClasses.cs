@@ -1,11 +1,11 @@
 ﻿namespace WPFStartupLibrary;
-public class CustomWindowsClasses : IExit, ISystemError, IMessageBox
+public class CustomWindowsClasses : ILayout
 {
+    public StartLayout? Layout { get; set; }
     void IExit.ExitApp()
     {
         Application.Current.Shutdown();
     }
-
     Task IMessageBox.ShowMessageAsync(string message)
     {
         MessageBox.Show(message); //use old fashioned messageboxes.
