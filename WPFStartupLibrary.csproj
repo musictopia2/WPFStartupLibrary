@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFramework>net6.0-windows</TargetFramework>
@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	  
     <Nullable>enable</Nullable>
-	  <Version>2.0.1</Version>
+	  <Version>2.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,11 +27,27 @@
     <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\selectalltext.js" />
     <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\simplecarousel.js" />
     <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\text.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\autoscroll.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\basichelpers.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\center.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\clipboard.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\elementselector.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\fullscreen.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\highlighter.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\hover.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\keystroke.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\operatingsystemhelpers.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\Resize.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\ResizeModule.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\scrolllistener.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\selectalltext.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\simplecarousel.js" />
+    <Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.6\contentFiles\any\net6.0\wwwroot\text.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="3.0.1" />
-    <PackageReference Include="CommonBasicLibraries" Version="5.0.1" />
+    <PackageReference Include="BasicBlazorLibrary" Version="3.0.6" />
+    <PackageReference Include="CommonBasicLibraries" Version="5.0.8" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
   </ItemGroup>
 	<ItemGroup>
