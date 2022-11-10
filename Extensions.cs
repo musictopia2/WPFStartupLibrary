@@ -12,7 +12,7 @@ public static class Extensions
         services.AddSingleton<IExit>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<IMessageBox>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<ISystemError>(xx => xx.GetRequiredService<CustomWindowsClasses>());
-        aa.OS = aa.EnumOS.WindowsDT;
+        aa1.OS = aa1.EnumOS.WindowsDT;
         UIPlatform.DesktopValidationError = (message) => MessageBox.Show(message);
         UIPlatform.CurrentThread = new WPFThread();
     }

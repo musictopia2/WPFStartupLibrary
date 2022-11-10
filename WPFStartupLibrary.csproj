@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>net6.0-windows</TargetFramework>
+	  <TargetFramework>net7.0-windows</TargetFramework>
 	  <UseWPF>true</UseWPF>
 	  <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
 	  
     <Nullable>enable</Nullable>
-	  <Version>3.0.1</Version>
+	  <Version>7.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BasicBlazorLibrary" Version="4.0.1" />
