@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFramework>net7.0-windows</TargetFramework>
@@ -10,9 +10,9 @@
 	  <Version>7.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="4.0.1" />
-    <PackageReference Include="CommonBasicLibraries" Version="7.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="BasicBlazorLibrary" Version="7.0.2" />
+    <PackageReference Include="CommonBasicLibraries" Version="7.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 	<ItemGroup>
 		<Using Remove="System.Windows.Forms" />
