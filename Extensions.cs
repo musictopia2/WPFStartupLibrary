@@ -16,4 +16,12 @@ public static class Extensions
         UIPlatform.DesktopValidationError = (message) => MessageBox.Show(message);
         UIPlatform.CurrentThread = new WPFThread();
     }
+    public static void RegisterFullScreen(this Window window)
+    {
+        mm1.ProcessFullScreen = () =>
+        {
+            window.WindowStyle = WindowStyle.None;
+            window.WindowState = WindowState.Maximized;
+        };
+    }
 }
