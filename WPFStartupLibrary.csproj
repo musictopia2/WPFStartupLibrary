@@ -7,6 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Version>9.0.1</Version>
+    <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
+    <FeedType>Public</FeedType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BasicBlazorLibrary" Version="9.0.1" />
@@ -16,4 +18,7 @@
   <ItemGroup>
     <Using Remove="System.Windows.Forms" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="C:\VS\OneNet\Apps\CommandLines\PostBuildPackageHandler\bin\Release\net9.0\PostBuildPackageHandler.exe $(ProjectName) $(ProjectDir) $(ProjectFileName) $(TargetDir)" Condition="'$(Configuration)' == 'Release' and '$(RunPostBuildAppCondition)' == 'true'" />
+  </Target>
 </Project>
