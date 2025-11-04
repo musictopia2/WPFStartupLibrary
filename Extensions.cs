@@ -7,6 +7,7 @@ public static class Extensions
         //not important that its a different reference.
         BasicBlazorLibrary.Helpers.BlazorUIHelpers.MessageBox = windows;
         BasicBlazorLibrary.Helpers.BlazorUIHelpers.SystemError = windows;
+        BasicBlazorLibrary.Helpers.BlazorUIHelpers.Exit = windows;
         services.AddSingleton<CustomWindowsClasses>();
         services.AddSingleton<ILayout>(xx => xx.GetRequiredService<CustomWindowsClasses>());
         services.AddSingleton<IExit>(xx => xx.GetRequiredService<CustomWindowsClasses>());

@@ -11,9 +11,9 @@
     <FeedType>Public</FeedType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="9.0.27" />
-    <PackageReference Include="CommonBasicLibraries" Version="9.0.30" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+    <PackageReference Include="BasicBlazorLibrary" Version="9.0.102" />
+    <PackageReference Include="CommonBasicLibraries" Version="9.0.78" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.10" />
   </ItemGroup>
   <ItemGroup>
     <Using Remove="System.Windows.Forms" />
